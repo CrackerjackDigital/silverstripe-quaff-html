@@ -1,0 +1,39 @@
+{
+	"name": "crackerjackdigital/silverstripe-quaff-html",
+	"type": "silverstripe-module",
+	"description": "HTML slurping module for Quaff",
+	"homepage": "http://github.com/crackerjackdigital",
+	"license": "BSD-3-Clause",
+	"keywords": [
+		"silverstripe",
+		"api",
+		"quaff"
+	],
+	"authors": [
+		{
+			"name": "Stephen Wake",
+			"homepage": "http://github.com/crackerjackdigital"
+		}
+	],
+	"require": {
+		"php": ">=5.5",
+		"composer/installers": "*",
+		"silverstripe/framework": ">=3.1",
+		"crackerjackdigital/silverstripe-modular": "dev-develop",
+		"crackerjackdigital/silverstripe-quaff": "dev-develop"
+	},
+	"extra": {
+		"installer-name": "quaff-html"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/crackerjackdigital/silverstripe-modular"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/crackerjackdigital/silverstripe-quaff"
+		}
+	],
+	"minimum-stability": "dev"
+}
