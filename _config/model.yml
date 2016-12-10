@@ -1,0 +1,34 @@
+---
+Name: quaff-website-fields
+---
+Quaff\Models\HTML\Attribute:
+  extensions:
+    - Quaff\Fields\HTML\ModelField
+Quaff\HTML\Models\WebSite:
+  extensions:
+    - Modular\Fields\Title
+    - Modular\Fields\ExternalLink
+    - Quaff\Fields\HTML\ValidationToken
+---
+Name: quaff-html-relationships
+---
+Quaff\Models\HTML\Attribute:
+  extensions:
+    - Quaff\HTML\Relationships\HasElement
+Quaff\Models\HTML\Element:
+  extensions:
+    - Quaff\HTML\Relationships\HasAttributes
+    - Quaff\HTML\Relationships\HasModel
+Quaff\Models\HTML\Node:
+  extensions:
+    - Quaff\HTML\Relationships\HasParent
+    - Quaff\HTML\Relationships\HasChildren
+    - Quaff\HTML\Relationships\HasDocument
+---
+Name: quaff-html-back-relationships
+---
+Member:
+  has_many:
+    WebSites: Quaff\HTML\Models\WebSite
+
+

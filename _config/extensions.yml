@@ -1,0 +1,6 @@
+---
+Name: quaff-website-extensions
+---
+Quaff\HTML\Models\Element:
+  extensions:
+    - Quaff\Extensions\Model\Quaffable

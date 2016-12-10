@@ -1,0 +1,52 @@
+---
+Name: quaff-html-endpoints
+---
+Quaff\HTML\Endpoints:
+  info:
+    name: 'html'
+    path: '//*'
+Quaff\HTML\Endpoints\Title:
+  info:
+    name: 'title'
+    base: 'html'
+    path: '/head/title/text()'
+Quaff\HTML\Endpoints\MetaTags:
+  info:
+    name: 'metatags'
+    base: 'html'
+    path: '/head/meta/text()'
+Quaff\HTML\Endpoints\AllContent:
+  info:
+    name: 'content'
+    base: 'html'
+    path: '//body/text()'
+Quaff\HTML\Endpoints\ExternalLinks:
+  info:
+    name: 'links'
+    base: 'html'
+    path: '//a@href'
+Quaff\HTML\Endpoints\ExternalImages:
+  info:
+    name: 'images'
+    base: 'html'
+    path: '//img@src'
+Quaff\HTML\Endpoints\ExternalScripts:
+  info:
+    name: 'scripts'
+    base: 'html'
+    path: '//script[@src]@src'
+Quaff\HTML\Endpoints\InlineScripts:
+  info:
+    name: 'inline-scripts'
+    base: 'html'
+    path: '//script[not(@src)]/text()'
+Quaff\HTML\Endpoints\ExternalStylesheets:
+  info:
+    name: 'stylesheets'
+    base: 'html'
+    path: '//link[@rel="stylesheet" and @href]@href'
+Quaff\HTML\Endpoints\InlineStyles:
+  info:
+    name: 'inline-styles'
+    base: 'html'
+    path: '//style[not(@href)/text()'
